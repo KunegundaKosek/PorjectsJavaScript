@@ -1,12 +1,21 @@
 const input = document.getElementById('pass');
 const div = document.querySelector('div');
-const passwords = ["user", "jesień"];
-const messages = ["Wiadomość", "Pora roku"]
+const passwords = ["usEr", "jesIeŃ"];
+const messages = ["Wiadomość", "Pora roku"];
+
+passwords[1].toUpperCase();
+passwords[0].toUpperCase();
+
 
 input.addEventListener('input', (e) => {
+
     const text = e.target.value;
-    passwords.forEach(password => {
-        if(password === text)
+    div.textContent = '';
+    passwords.forEach((password, index) => {
+        if (password.toUpperCase() === text.toUpperCase()) {
+            div.textContent = messages[index];
+            e.target.value = '';
+        }
     })
 
 

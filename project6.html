@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losowanie</title>
+
+    <style>
+        html {
+            font-family: Cambria, sans-serif;
+        }
+
+        .random {
+            display: block;
+            margin: 50px auto 50px;
+            background-color: white;
+            border: 5px solid rgb(40, 81, 83);
+            font-size: 25px;
+            padding: 20px 50px;
+            cursor: pointer;
+        }
+
+        div {
+            margin: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .addText {
+            display: block;
+            text-align: center;
+            width: 300px;
+            margin: 50px auto;
+            height: 50px;
+            border: 3px solid black;
+            font-size: 20px;
+        }
+
+        hr {
+            border: 2px solid black;
+        }
+
+        p {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .input {
+            display: block;
+            width: 300px;
+            height: 40px;
+            border: 2px solid blue;
+        }
+
+        label {
+            font-size: 34px;
+        }
+
+        .compInput {
+            height: 30px;
+            border: 2px solid blue;
+            width: 400px;
+            padding: 10px;
+            font-size: 34px;
+        }
+
+        .add, .clean {
+            width: 100px;
+            height: 36px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .showAdvice, .showOptions {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .randomNumber{
+            text-align: center;
+            color: red;
+            font-size: 25px;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <button class="random" >Losuj imię</button>
+    <div></div>
+    <hr/>
+
+    <button id="generate" class="random">Wygeneruj 10 różnych kodów</button>
+    <section></section>
+    <hr/>
+
+    <input class="addText" type="text">
+    <button id="generateBtn" class="random" >Dodaj</button>
+    <p></p>
+
+
+    <hr />
+
+    <form>
+        <label>Dodaj możliwości: </label>
+        <input class="compInput" type="text" >
+        <button class="add" >Dodaj</button>
+        <button class="clean" >Resetuj</button>
+    </form>
+
+    <h2>Komputerze, pokaż co mam zrobić z tym o czym myślę...</h2>
+    <button class="showAdvice">Pokaż radę</button>
+    <button class="showOptions">Pokaż możliwości</button>
+    <h1></h1>
+
+    <hr />
+    <h3>Liczba z przedziału od 50 do 60</h3>
+    <button id="randomNumber" class="random">Losuj</button>
+    <p class="randomNumber"></p>
+
+    <script src="components/project6.js"></script>
+
+</body>
+
+</html>
