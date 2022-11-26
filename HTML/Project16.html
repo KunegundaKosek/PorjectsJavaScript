@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+
+    <style>
+
+        body {
+            background-image: linear-gradient(rgb(60, 11, 34), rgb(57, 28, 57), rgb(43, 3, 43), rgb(57, 28, 57), rgb(60, 11, 34));
+            min-height: 100vh;
+            font-family: arial;
+            font-size: 22px;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        input,
+        select {
+            font-size: 22px;
+        }
+
+        .user-list {
+            background-color: #eee;
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .user {
+            flex-basis: 30%;
+            display: flex;
+        }
+
+        .user__image {
+            order: -1;
+            padding: 20px;
+        }
+
+        .user__name {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="generator">
+        <label class="generator__input-name">Wybierz płeć:
+            <select name="gender" class="generator__select">
+                <option value="both" selected>Wszyscy</option>
+                <option value="female">Kobiety</option>
+                <option value="male">Mężczyźni</option>
+            </select>
+        </label>
+
+        <label class="generator__input-name">Liczba osób:
+            <input class="generator__input" name="users-number" type="number" value="10">
+            <input type="submit" value="Pobierz użytkowników" class="button">
+        </label>
+    </form>
+
+    <div class="user-list">
+
+    </div>
+
+    <script src="../components/project16.js"></script>
+
+</body>
+
+</html>
