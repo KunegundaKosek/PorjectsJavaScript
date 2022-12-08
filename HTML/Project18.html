@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../components/project18.js"></script>
+    <title>Background animation</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .balloon-animation {
+            position: relative;
+            background-color: #00e7ff;
+            height: 100vh;
+        }
+
+        .flying-cloud {
+            position: absolute;
+            width: 20%;
+        }
+
+        .flying-balloon {
+            position: absolute;
+            width: 15%;
+            top: 20%;
+            left: 30%;
+        }
+
+        .flying-cloud:nth-child(1) {
+            z-index: 1;
+            left: 20%;
+            top: 30%;
+            
+        }
+        
+        .flying-cloud:nth-child(2) {
+            left: 24%;
+            
+        }
+        
+        .flying-cloud:nth-child(3) {
+            z-index: 1;
+            left: 33%;
+            top: 45%;
+        }
+
+        .flying-cloud:nth-child(4) {
+            left: 60%;
+            
+        }
+        
+        .flying-cloud:nth-child(5) {
+            top: 25px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balloon-animation">
+        <img src="../img/cloud.png" ratioX="0.36" ratoY="0.34" class="anim-bg flying-cloud">
+        <img src="../img/cloud.png" ratioX="0.2" ratoY="0.23" class="anim-bg flying-cloud">
+        <img src="../img/cloud.png" ratioX="0.26" ratoY="0.34" class="anim-bg flying-cloud">
+        <img src="../img/cloud.png" ratioX="0.1" ratoY="0.11" class="anim-bg flying-cloud">
+        <img src="../img/cloud.png" ratioX="0.13" ratoY="0.53" class="anim-bg flying-cloud">
+        <img src="../img/cloud.png" ratioX="0.23" ratoY="0.41" class="anim-bg flying-cloud">
+        <img src="../img/balloon.png" ratioX="0.07" ratioY="0.3" class="anim-bg flying-balloon">
+    </div>
+
+</body>
+
+</html>

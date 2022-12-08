@@ -10,12 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('mousewheel', function (e) {
         if (isThrottled) return;
         isThrottled = true;
+        
         setTimeout(function () {
             isThrottled = false;
         }, 1000);
 
         const direction = e.wheelDelta < 0 ? 1 : -1;
 
+        scrool(direction);
+
+
+    })
+
+    function scrool(direction) {
         if (direction === 1) {
             const isLastection = currentSectionIndex === sections.length - 1;
             if (isLastection) return;
@@ -25,12 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         currentSectionIndex = currentSectionIndex + direction;
-        console.log(currentSectionIndex);
 
+        scrollToCurrentSection();
+    }
+
+    function scrollToCurrentSection() {
         sections[currentSectionIndex].scrollIntoView({
             behavior: 'smooth',
             block: 'start',
         })
-    })
+    }
 
 })

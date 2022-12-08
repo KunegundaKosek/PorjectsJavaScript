@@ -1,14 +1,14 @@
 
 const slideList = [{
-    img: 'img/photo1.jpg',
+    img: 'photo1.jpg',
     text: 'Pierwszy tekst'
 },
 {
-    img: 'img/photo2.jpg',
+    img: 'photo2.jpg',
     text: 'Drugi tekst'
 },
 {
-    img: 'img/photo3.jpg',
+    img: 'photo3.jpg',
     text: 'Trzeci tekst'
 }
 ];
